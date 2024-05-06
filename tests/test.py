@@ -2,10 +2,8 @@
 import pytest
 
 
-@pytest.fixture
-def client():
-    response = "Hello, World!"
-    assert "Hello, World!" in response
+def test_uppercase():
+    assert "loud noises".upper() == "LOUD NOISES"
 
 # def test_index(client):
 #     response = client.get('/')
